@@ -1,0 +1,36 @@
+# ---- 编译产物（不要入库）----
+*.exe
+*.o
+*.obj
+*.out
+*.dll
+*.lib
+*.pdb
+*.ilk
+*.exp
+*.tlog
+*.idb
+
+# ---- 编辑器 / IDE 本地配置 ----
+.vs/
+.vscode/
+.idea/
+*.user
+*.suo
+*.slnx.doc
+CodeBlocks/
+templates/
+*.layout
+
+# ---- 构建目录 ----
+Debug/
+Release/
+x64/
+build/
+bin/
+obj/
+
+# ---- 系统文件 ----
+Thumbs.db
+desktop.ini
+.DS_Store
