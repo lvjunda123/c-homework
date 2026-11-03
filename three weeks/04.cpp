@@ -3,7 +3,7 @@ using namespace std;
 int main(){
 	int n;
 	while(cin>>n){
-	for(int t=2;t<n;t++){
+	for(int t=2;t<=n;t++){
 		int flag=1;
 		for(int j=2;j<t;j++){
 			if(t%j==0){
