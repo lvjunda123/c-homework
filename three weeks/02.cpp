@@ -1,4 +1,4 @@
-#include<iostream>
+/*#include<iostream>
 using namespace std;
 int main(){
 	int m,p,q,k,flag1,flag2;
@@ -30,7 +30,35 @@ int main(){
 		}
 	}
 	return 0;
+}*/
+
+
+#include<iostream>
+using namespace std;
+int main(){
+	int m;
+	cin>>m;
+	for(int p=3;p<m;p+=2){
+		int flag=1;
+		int flag1=1;
+		for(int k=2;k<p;k++){
+			if(p%k==0){
+				flag=0;break;
+			}
+		}
+		if(flag==0){
+			continue;
+		}
+		int q=m-p;
+		for(int k=2;k<q;k++){
+			if(q%k==0){
+				flag1=0;
+			}
+		}
+		if(flag1==1){
+			cout<<m<<"="<<p<<"+"<<q<<endl;
+			;
+		}
+	}
+	return 0;
 }
-
-
-

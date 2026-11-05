@@ -36,6 +36,7 @@ int main()
 			// 两个都是素数，输出
 			if (flag2 == 1) {
 				printf("%d=%d+%d\n", m, p, q);
+				break;
 			}
 		}
 	}
