@@ -38,7 +38,7 @@ using namespace std;
 int main(){
 	int m;
 	cin>>m;
-	for(int p=3;p<m;p+=2){
+	for(int p=3;p<m-2;p+=2){
 		int flag=1;
 		int flag1=1;
 		for(int k=2;k<p;k++){
