@@ -10,11 +10,12 @@ int main(){
 			cin>>arr[a][a2];
 		}
 	}
-	int h=0;
-	int l=n-1;
-	for(;h<n;h++){
-		for(int l=n-1;l>=0;l--){    
-			arr2[h][l]=arr[n-1-l][h]; //从l=0 1 2----> 到l2（n-1-l）=2 1 0   2=n-0-1  1=n-1-1....
+	for(int h=0;h<n;h++){
+		for(int l=0;l<n;l++){    
+			int h2,l2;
+			h2=l;       //以后有下标交换就这么写吧，要不理解不了
+			l2=n-1-h;
+			arr2[h2][l2]=arr[h][l]; //由推理可知，新的行=原来的列 新的列=n-1-原来的行
 		}
 	}
 	for(int a=0;a<n;a++){
